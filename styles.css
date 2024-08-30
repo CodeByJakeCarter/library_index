@@ -1,0 +1,17 @@
+body {
+  background-color: violet;
+}
+.booksInLibrary,
+tr,
+td {
+  border-collapse: collapse;
+  border-style: solid;
+}
+td {
+  text-align: center;
+}
+
+td,
+th {
+  padding: 5px;
+}
