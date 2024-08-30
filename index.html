@@ -16,15 +16,29 @@
             <th scope="col">Author</th>
             <th scope="col">Pages</th>
             <th scope="col">Read</th>
+            <th scope="col">Remove</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
-      <dialog>
-        <button autofocus>Close</button>
+      <dialog id="bookDialog">
         <p>Add a book please!</p>
+        <form method="dialog">
+          <p>
+            <label for="titleAdd">Title:</label>
+            <input type="text" id="titleAdd" required /> <br />
+            <label for="authorAdd">Author:</label>
+            <input type="text" id="authorAdd" required /> <br />
+            <label for="pagesAdd">Pages:</label>
+            <input type="text" id="pagesAdd" required /> <br />
+          </p>
+          <div>
+            <input type="submit" id="addBook" value="Add" />
+            <input type="button" id="cancelButton" value="Cancel" />
+          </div>
+        </form>
       </dialog>
-      <button>Add Book</button>
+      <button id="showDialog">Add Book</button>
     </center>
     <script src="scripts.js"></script>
   </body>
